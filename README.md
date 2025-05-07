@@ -14,3 +14,5 @@ Built with HTML, CSS, and vanilla JavaScript, this project demonstrates front-en
 The site includes sections for event information, schedule details, and important links to connect developers with resources. The RSVP system validates user input and provides immediate feedback, enhancing the user experience.
 
 🎮 Ignite the next wave of indie gaming!
+
+Check it out here: https://edugre.github.io/EGoncalvez_WEB101/
