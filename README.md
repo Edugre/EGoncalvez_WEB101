@@ -1,5 +1,4 @@
-# EGoncalvez_WEB101
-# Indie Ignite
+# EGoncalvez_WEB101: Indie Ignite
 
 A dynamic showcase platform celebrating indie game development. This responsive website serves as a hub for the Indie Ignite event, where creators, gamers, and industry professionals come together to fuel the future of indie games.
 
