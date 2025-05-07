@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Indie Ignite</title>
+        <link rel="icon" href="./img/Icon.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+When To Modify:
+- [ ] Project 4 (REQUIRED FEATURE)
+- [ ] Project 5 (REQUIRED FEATURE) 
+- [ ] Project 8 (STRETCH FEATURE) 
+- [ ] Any time between / after
+-->
+        <div class="navbar">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule-section">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><button class="button1" id="theme-button">Toogle Dark Mode</button></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container" id="home">
+            <div class="header-item">
+                <div id="header-img">
+                    <img src="./img/Icon.png"/>
+                </div>
+            </div>
+
+            <div class="header-item">
+                <div id="title">
+                    <h1>Indie Ignite</h1>
+                </div>
+                <h2>Fueling the Future of Indie Games</h2>
+                <div class="header-button">
+                    <button type="button" class="button1" onclick="location.href='#rsvp'">Sign Up</button>
+                    <button type="button" class="button2" id="motion-btn">Reduce Motion</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="about-section">
+            <div id="about">
+                <h2>About the Event</h2>
+                <p>🔥Indie Ignite is the ultimate showcase for indie game developers, bringing together creators, gamers, and industry professionals in an electrifying celebration of innovation.</p>
+                <p>This event offers a dynamic platform where indie devs can showcase their games, engage with players through live demos, and gain valuable exposure.</p>
+                <p>From interactive game booths to developer Q&As and community-voted awards, Indie Ignite fuels the future of gaming by spotlighting the most creative and groundbreaking indie titles.</p> 
+                <p>Whether you’re here to play, create, or connect, get ready to discover, play, and ignite the next wave of indie gaming! 🎮🔥</p>
+            </div>
+            <h2> Featured Games </h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/iSekR6ygGbw?autoplay=1&mute=1&controls=0&start=48&modestbranding=1&rel=0&loop=1&playlist=iSekR6ygGbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>What to Expect</h3>
+            <h4>Ignite Your Gamedev Journey</h4>
+            <ul>
+                <li class="list"> <b>Hands-on Game Demos:</b> <i>Test upcoming indie titles before anyone else and provide valuable feedback directly to the creators who will be on-site and eager to hear your thoughts.</i></li>
+                <li class="list"> <b>Networking opportunities:</b> <i>Connect with fellow gamers, indie developers, publishers, and industry veterans in a casual environment designed to foster meaningful relationships.</i></li>
+                <li class="list"> <b>Exclusive Developer Insights:</b> <i>Gain behind-the-scenes knowledge through panel discussions and Q&A sessions that reveal the creative process, challenges, and innovations driving the indie game industry forward.</i></li>
+            </ul>
+        </div>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="schedule-section">
+            <h2>Event Schedule</h2>
+            <div id="schedule">
+                <div class="date">
+                    <img alt="" src="./img/Welcome.png"/>
+                    <h3>Friday: Opening Reception & Welcome Mixer</h3>
+                    <p>Start the weekend with an informal mixer where attendees can meet developers, gamers, and industry professionals while enjoying drinks and light snacks.</p>
+                </div>
+                <div class="date">
+                    <img alt="Image description" src="./img/Controller.png"/>
+                    <h3>Saturday: Game Demos and Developer Q&A</h3>
+                    <p>Spend the day exploring hands-on game demos, with opportunities to interact directly with developers during Q&A sessions about their creative processes and challenges.</p>
+                </div>
+                <div class="date">
+                    <img alt="Image description" src="./img/Trophy.png"/>
+                    <h3>Sunday: Indie Game Awards Ceremony and Closing Remarks</h3>
+                    <p>Celebrate the best indie games of the weekend during the awards ceremony, followed by closing remarks to wrap up the event and thank everyone for their participation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>The indie game revolution is loading, controllers are rumbling, and the gaming world is ready for something fresh—but it needs YOUR creative spark. Whether you're showcasing your pixel masterpiece or simply coming to play the next breakout hit, this is your chance! Complete the form below to secure your spot at Indie Ignite.</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎮 DevPixel Studios from Seattle is joining the lineup.</p>
+            <p>🎮 Sarah, indie developer of "Neon Dreams" is joining the lineup.</p>
+            <p>🎮 Pixel Pioneers Collective from Portland is joining the lineup.</p>
+            <p id="rsvp-count">🔥 3 people have RSVP'd to this event!</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label for="name">Developer Name:</label>
+            <input type="text" id="name" placeholder="Your/Studio name">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="City/State">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email address">
+            <!-- Submit button -->
+            <button id="rsvp-button" class="button1">Submit RSVP</button>
+        </form>
+    </div>      
+</div>
+        <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p>Mission Status: ✅ READY TO PLAY</p>
+            <p id="modal-text">You’ve just entered the Indie Arcade Showcase! 🎮 Get ready to explore one-of-a-kind games built with heart, hustle, and heaps of pixel power. Whether you’re a dev, a fan, or just a curious space traveler—grab your controller and prepare for liftoff into a universe of creativity. 🚀</p>
+            <button id="modal-btn" class="button1">Close</button>
+        </div>
+        <div id="modal-item">
+            <img id="modal-img" src="./img/Rocket.png">
+        </div>
+    </div>
+</div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="links">
+            <h2>Links</h2>
+
+            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <a class="block" href="https://www.reddit.com/r/IndieGaming/">
+                <article>
+                    <h3>Indie Gaming Subreddit</h3>
+                    <p>Stay connected with fellow indie game enthusiasts, discover new projects, and share your own creations.</p>
+                </article>
+            </a>
+
+            <a class="block" href="https://store.steampowered.com/tags/en/Indie/">
+                <article>
+                    <h3>Steam Indie Category</h3>
+                    <p>Explore a vast collection of indie titles on the Steam Indie Games category and find your next favorite game!</p>
+                </article>
+            </a>
+        </div>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+         <div class="footer">
+            <div class="footer-links">
+                <a href="#about">Learn More</a>
+                <span class="separator">/</span>
+                <a href="mailto:eduardogoncalvez00@gmail.com">Email Our Team</a>
+              </div>   
+         </div>
+        <script src="index.js"></script>
+    </body>
+</html>
